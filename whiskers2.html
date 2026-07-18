@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Whisker Hope - Cat Rescue Foundation</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#fafafa;
+color:#333;
+}
+
+
+header{
+
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),
+url("https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+color:white;
+padding:20px;
+
+}
+
+
+header h1{
+font-size:65px;
+margin-bottom:20px;
+}
+
+
+header p{
+
+font-size:22px;
+max-width:800px;
+line-height:1.6;
+
+}
+
+
+.btn{
+
+display:inline-block;
+
+margin-top:35px;
+
+padding:16px 40px;
+
+background:#ff8c42;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:40px;
+
+font-weight:bold;
+
+}
+
+
+section{
+
+padding:80px 10%;
+
+}
+
+
+.title{
+
+text-align:center;
+
+font-size:40px;
+
+color:#e76f51;
+
+margin-bottom:50px;
+
+}
+
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+}
+
+
+.card h3{
+
+color:#e76f51;
+
+margin-bottom:15px;
+
+}
+
+
+.danger{
+
+background:#fff0ec;
+
+}
+
+
+.donation{
+
+background:#222;
+
+color:white;
+
+text-align:center;
+
+}
+
+
+.money{
+
+font-size:60px;
+
+color:#ffb703;
+
+font-weight:bold;
+
+}
+
+
+.progress{
+
+background:#555;
+
+height:25px;
+
+border-radius:20px;
+
+overflow:hidden;
+
+margin:30px auto;
+
+max-width:700px;
+
+}
+
+
+.bar{
+
+height:100%;
+
+width:35%;
+
+background:#ffb703;
+
+}
+
+
+button{
+
+padding:15px 35px;
+
+border:none;
+
+border-radius:30px;
+
+background:#ff8c42;
+
+color:white;
+
+font-size:18px;
+
+cursor:pointer;
+
+}
+
+
+form{
+
+max-width:600px;
+
+margin:auto;
+
+}
+
+
+input,textarea{
+
+width:100%;
+
+padding:15px;
+
+margin:10px 0;
+
+border-radius:10px;
+
+border:1px solid #ccc;
+
+}
+
+
+footer{
+
+background:#111;
+
+color:white;
+
+text-align:center;
+
+padding:30px;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div>
+
+<h1>🐾 Whisker Hope</h1>
+
+<p>
+Protecting abandoned cats and creating a safe shelter where every cat can live without fear.
+</p>
+
+
+<a class="btn" href="#donate">
+Help Save A Life
+</a>
+
+
+</div>
+
+</header>
+
+
+
+<section class="danger">
+
+
+<h2 class="title">
+The Problem
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>🚨 Cats Are In Danger</h3>
+
+<p>
+Many abandoned cats live on the streets without protection, food, or medical care.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🏚 No Safe Shelter</h3>
+
+<p>
+Our goal is to build a rescue center where injured and vulnerable cats can recover safely.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>❤️ Every Life Matters</h3>
+
+<p>
+With community support, we can save cats and give them a second chance.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<section>
+
+
+<h2 class="title">
+Our Mission
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>🐱 Rescue</h3>
+
+<p>
+Find cats in danger and bring them to safety.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>💉 Medical Care</h3>
+
+<p>
+Provide veterinary treatment, vaccinations, and food.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🏡 Forever Homes</h3>
+
+<p>
+Help rescued cats find loving families.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section id="donate" class="donation">
+
+
+<h2 class="title">
+Build Our Cat Shelter
+</h2>
+
+
+<p>
+We need your help to create a real rescue shelter.
+</p>
+
+
+<div class="money">
+$0 / $20,000
+</div>
+
+
+<p>
+Shelter construction • Food • Medicine • Veterinary care
+</p>
+
+
+<div class="progress">
+
+<div class="bar"></div>
+
+</div>
+
+
+<button>
+Donate Now
+</button>
+
+
+</section>
+
+
+
+
+
+<section>
+
+
+<h2 class="title">
+Join The Rescue Team
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>🤝 Volunteer</h3>
+
+<p>
+Help with feeding, transportation, cleaning, and caring for cats.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>💰 Sponsor</h3>
+
+<p>
+Support monthly food and medical expenses.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>📢 Share</h3>
+
+<p>
+Spread awareness and help us reach more people.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<section>
+
+
+<h2 class="title">
+Contact Us
+</h2>
+
+
+<form>
+
+<input placeholder="Your Name">
+
+<input placeholder="Email">
+
+<textarea rows="5" placeholder="Your message"></textarea>
+
+
+<button>
+Send
+</button>
+
+
+</form>
+
+
+</section>
+
+
+
+
+<footer>
+
+
+<h2>🐾 Whisker Hope Foundation</h2>
+
+<p>
+Saving cats. Building hope. Creating a safer future.
+</p>
+
+
+</footer>
+
+
+
+</body>
+
+</html>
